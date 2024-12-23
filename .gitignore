@@ -1,3 +1,2 @@
-#manual changes
-#backend/node_modules
-client/src/Image/product
+*.zip
+*.zip

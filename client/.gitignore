@@ -1,0 +1,8 @@
+#manual changes
+#backend/node_modules
+#client/src/Image/product.zip
+#client/src/image/category
+#client/src/image/product
+#client/src/image/sub category
+*.zip
+client/src/Image/product/
