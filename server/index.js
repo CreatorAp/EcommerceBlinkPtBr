@@ -19,7 +19,9 @@ const app = express()
 app.use(cors({
     credentials : true,
     // origin : process.env.FRONTEND_URL
-    origin : "http://localhost:5173"
+    // origin : "http://localhost:5173"
+    origin : "https://ecommercefront-liard.vercel.app/"
+    
     // origin : "*"
 }))
 app.use(express.json())
