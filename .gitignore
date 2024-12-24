@@ -2,3 +2,5 @@
 *.zip
 server/node_modules
 client/node_modules
+# *.zip
+/client/src/Image/product/
