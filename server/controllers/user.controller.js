@@ -21,6 +21,14 @@ export async function registerUserController(request,response){
             })
         }
 
+        if(password.length < 6){
+            return response.status(400).json({
+                message : "Password must have at least 6 caracters",
+                error : true,
+                success : false
+            })
+        }
+
         const user = await UserModel.findOne({ email })
 
         if(user){

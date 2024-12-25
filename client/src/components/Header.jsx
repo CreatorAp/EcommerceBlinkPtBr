@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import logo from '../assets/logo.png'
+import yourLogo from '../assets/your logo here.png'
+import yourLogo2 from '../assets/output-onlinepngtools (2).png'
 import Search from './Search'
 import { Link, useLocation,useNavigate } from 'react-router-dom'
 import { FaRegCircleUser } from "react-icons/fa6";
@@ -65,14 +67,14 @@ const Header = () => {
                                 <div className='h-full'>
                                     <Link to={"/"} className='h-full flex justify-center items-center'>
                                         <img 
-                                            src={logo}
+                                            src={yourLogo2}
                                             width={170}
                                             height={60}
                                             alt='logo'
                                             className='hidden lg:block'
                                         />
                                         <img 
-                                            src={logo}
+                                            src={yourLogo2}
                                             width={120}
                                             height={60}
                                             alt='logo'

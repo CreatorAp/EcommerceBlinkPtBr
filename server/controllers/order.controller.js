@@ -56,11 +56,12 @@ export const pricewithDiscount = (price,dis = 1)=>{
 
 export async function paymentController(request,response){
     try {
+        
         const userId = request.userId // auth middleware 
         const { list_items, totalAmt, addressId,subTotalAmt } = request.body 
 
         const user = await UserModel.findById(userId)
-
+        
         const line_items  = list_items.map(item =>{
             return{
                price_data : {
@@ -81,7 +82,7 @@ export async function paymentController(request,response){
                quantity : item.quantity 
             }
         })
-
+        
         const params = {
             submit_type : 'pay',
             mode : 'payment',
@@ -96,9 +97,9 @@ export async function paymentController(request,response){
             cancel_url : `${process.env.FRONTEND_URL}/cancel`
 
         }
-
+        
         const session = await Stripe.checkout.sessions.create(params)
-
+        console.log("paymentt")
         return response.status(200).json(session)
 
     } catch (error) {

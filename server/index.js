@@ -20,9 +20,9 @@ app.use(cors({
     credentials : true,
     // origin : process.env.FRONTEND_URL
     // origin : "http://localhost:5173"
-    origin : "https://ecommercefront-etfl9blvv-arnon-pedros-projects.vercel.app"
+    // origin : "https://ecommercefront-etfl9blvv-arnon-pedros-projects.vercel.app"
     
-    // origin : "*"
+    origin : ["*","http://localhost:5173", "https://ecommercefront-liard.vercel.app"]
 }))
 app.use(express.json())
 app.use(cookieParser())
