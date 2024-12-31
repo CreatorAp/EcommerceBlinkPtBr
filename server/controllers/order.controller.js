@@ -66,7 +66,7 @@ export async function paymentController(request,response){
             return{
                price_data : {
                     // currency : 'inr',
-                    currency : 'usd',
+                    currency : 'brl',
                     product_data : {
                         name : item.productId.name,
                         images : item.productId.image,
