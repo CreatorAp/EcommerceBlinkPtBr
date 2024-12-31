@@ -6,7 +6,7 @@ export const AddSubCategoryController = async(request,response)=>{
 
         if(!name && !image && !category[0] ){
             return response.status(400).json({
-                message : "Provide name, image, category",
+                message : "Forneça nome, imagem, categoria",
                 error : true,
                 success : false
             })
@@ -22,7 +22,7 @@ export const AddSubCategoryController = async(request,response)=>{
         const save = await createSubCategory.save()
 
         return response.json({
-            message : "Sub Category Created",
+            message : "Sub Categoria Criada",
             data : save,
             error : false,
             success : true
@@ -41,7 +41,7 @@ export const getSubCategoryController = async(request,response)=>{
     try {
         const data = await SubCategoryModel.find().sort({createdAt : -1}).populate('category')
         return response.json({
-            message : "Sub Category data",
+            message : "Sub Categoria dados",
             data : data,
             error : false,
             success : true
@@ -63,7 +63,7 @@ export const updateSubCategoryController = async(request,response)=>{
 
         if(!checkSub){
             return response.status(400).json({
-                message : "Check your _id",
+                message : "Check seu _id",
                 error : true,
                 success : false
             })
@@ -76,7 +76,7 @@ export const updateSubCategoryController = async(request,response)=>{
         })
 
         return response.json({
-            message : 'Updated Successfully',
+            message : 'Atualizado com sucesso',
             data : updateSubCategory,
             error : false,
             success : true
@@ -98,7 +98,7 @@ export const deleteSubCategoryController = async(request,response)=>{
         const deleteSub = await SubCategoryModel.findByIdAndDelete(_id)
 
         return response.json({
-            message : "Delete successfully",
+            message : "removido com sucesso",
             data : deleteSub,
             error : false,
             success : true

@@ -73,11 +73,11 @@ const Register = () => {
     return (
         <section className='w-full container mx-auto px-2'>
             <div className='bg-white my-4 w-full max-w-lg mx-auto rounded p-7'>
-                <p>Welcome to Binkeyit</p>
+                <p>Bem vindo</p>
 
                 <form className='grid gap-4 mt-6' onSubmit={handleSubmit}>
                     <div className='grid gap-1'>
-                        <label htmlFor='name'>Name :</label>
+                        <label htmlFor='name'>Nome :</label>
                         <input
                             type='text'
                             id='name'
@@ -86,7 +86,7 @@ const Register = () => {
                             name='name'
                             value={data.name}
                             onChange={handleChange}
-                            placeholder='Enter your name'
+                            placeholder='Digite nome'
                         />
                     </div>
                     <div className='grid gap-1'>
@@ -98,11 +98,11 @@ const Register = () => {
                             name='email'
                             value={data.email}
                             onChange={handleChange}
-                            placeholder='Enter your email'
+                            placeholder='Digite email'
                         />
                     </div>
                     <div className='grid gap-1'>
-                        <label htmlFor='password'>Password :</label>
+                        <label htmlFor='password'>Senha :</label>
                         <div className='bg-blue-50 p-2 border rounded flex items-center focus-within:border-primary-200'>
                             <input
                                 type={showPassword ? "text" : "password"}
@@ -111,7 +111,7 @@ const Register = () => {
                                 name='password'
                                 value={data.password}
                                 onChange={handleChange}
-                                placeholder='Enter your password'
+                                placeholder='Digite senha'
                             />
                             <div onClick={() => setShowPassword(preve => !preve)} className='cursor-pointer'>
                                 {
@@ -125,7 +125,7 @@ const Register = () => {
                         </div>
                     </div>
                     <div className='grid gap-1'>
-                        <label htmlFor='confirmPassword'>Confirm Password :</label>
+                        <label htmlFor='confirmPassword'>Confirmar Senha :</label>
                         <div className='bg-blue-50 p-2 border rounded flex items-center focus-within:border-primary-200'>
                             <input
                                 type={showConfirmPassword ? "text" : "password"}
@@ -134,7 +134,7 @@ const Register = () => {
                                 name='confirmPassword'
                                 value={data.confirmPassword}
                                 onChange={handleChange}
-                                placeholder='Enter your confirm password'
+                                placeholder='Confirme senha'
                             />
                             <div onClick={() => setShowConfirmPassword(preve => !preve)} className='cursor-pointer'>
                                 {
@@ -148,12 +148,12 @@ const Register = () => {
                         </div>
                     </div>
 
-                    <button disabled={!valideValue} className={` ${valideValue ? "bg-green-800 hover:bg-green-700" : "bg-gray-500" }    text-white py-2 rounded font-semibold my-3 tracking-wide`}>Register</button>
+                    <button disabled={!valideValue} className={` ${valideValue ? "bg-green-800 hover:bg-green-700" : "bg-gray-500" }    text-white py-2 rounded font-semibold my-3 tracking-wide`}>Cadastro</button>
 
                 </form>
 
                 <p>
-                    Already have account ? <Link to={"/login"} className='font-semibold text-green-700 hover:text-green-800'>Login</Link>
+                    Ja possui conta ? <Link to={"/login"} className='font-semibold text-green-700 hover:text-green-800'>Login</Link>
                 </p>
             </div>
         </section>

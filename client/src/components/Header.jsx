@@ -140,7 +140,7 @@ const Header = () => {
                                                             <p>{DisplayPriceInRupees(totalPrice)}</p>
                                                         </div>
                                                     ) : (
-                                                        <p>My Cart</p>
+                                                        <p>Meu Carrinho</p>
                                                     )
                                                 }
                                             </div>    

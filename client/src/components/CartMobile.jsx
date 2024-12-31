@@ -27,7 +27,7 @@ const CartMobileLink = () => {
                     </div>
 
                     <Link to={"/cart"} className='flex items-center gap-1'>
-                        <span className='text-sm'>View Cart</span>
+                        <span className='text-sm'>Ver Carrinho</span>
                         <FaCaretRight/>
                     </Link>
                 </div>

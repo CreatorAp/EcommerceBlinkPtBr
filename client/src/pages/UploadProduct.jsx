@@ -149,16 +149,16 @@ const UploadProduct = () => {
   return (
     <section className=''>
         <div className='p-2   bg-white shadow-md flex items-center justify-between'>
-            <h2 className='font-semibold'>Upload Product</h2>
+            <h2 className='font-semibold'>Upload Produto</h2>
         </div>
         <div className='grid p-3'>
             <form className='grid gap-4' onSubmit={handleSubmit}>
                 <div className='grid gap-1'>
-                  <label htmlFor='name' className='font-medium'>Name</label>
+                  <label htmlFor='name' className='font-medium'>Nome</label>
                   <input 
                     id='name'
                     type='text'
-                    placeholder='Enter product name'
+                    placeholder='Digite nome do produto'
                     name='name'
                     value={data.name}
                     onChange={handleChange}
@@ -167,7 +167,7 @@ const UploadProduct = () => {
                   />
                 </div>
                 <div className='grid gap-1'>
-                  <label htmlFor='description' className='font-medium'>Description</label>
+                  <label htmlFor='description' className='font-medium'>Descrição</label>
                   <textarea 
                     id='description'
                     type='text'
@@ -182,7 +182,7 @@ const UploadProduct = () => {
                   />
                 </div>
                 <div>
-                    <p className='font-medium'>Image</p>
+                    <p className='font-medium'>Imagem</p>
                     <div>
                       <label htmlFor='productImage' className='bg-blue-50 h-24 border rounded flex justify-center items-center cursor-pointer'>
                           <div className='text-center flex justify-center items-center flex-col'>
@@ -190,7 +190,7 @@ const UploadProduct = () => {
                               imageLoading ?  <Loading/> : (
                                 <>
                                    <FaCloudUploadAlt size={35}/>
-                                   <p>Upload Image</p>
+                                   <p>Upload Imagem</p>
                                 </>
                               )
                             }
@@ -227,7 +227,7 @@ const UploadProduct = () => {
 
                 </div>
                 <div className='grid gap-1'>
-                  <label className='font-medium'>Category</label>
+                  <label className='font-medium'>Categoria</label>
                   <div>
                     <select
                       className='bg-blue-50 border w-full p-2 rounded'
@@ -245,7 +245,7 @@ const UploadProduct = () => {
                         setSelectCategory("")
                       }}
                     >
-                      <option value={""}>Select Category</option>
+                      <option value={""}>Select Categoria</option>
                       {
                         allCategory.map((c,index)=>{
                           return(
@@ -271,7 +271,7 @@ const UploadProduct = () => {
                   </div>
                 </div>
                 <div className='grid gap-1'>
-                  <label className='font-medium'>Sub Category</label>
+                  <label className='font-medium'>Sub Categoria</label>
                   <div>
                     <select
                       className='bg-blue-50 border w-full p-2 rounded'
@@ -289,7 +289,7 @@ const UploadProduct = () => {
                         setSelectSubCategory("")
                       }}
                     >
-                      <option value={""} className='text-neutral-600'>Select Sub Category</option>
+                      <option value={""} className='text-neutral-600'>Selecionar Sub Categoria</option>
                       {
                         allSubCategory.map((c,index)=>{
                           return(
@@ -316,7 +316,7 @@ const UploadProduct = () => {
                 </div>
 
                 <div className='grid gap-1'>
-                  <label htmlFor='unit' className='font-medium'>Unit</label>
+                  <label htmlFor='unit' className='font-medium'>Unidade</label>
                   <input 
                     id='unit'
                     type='text'
@@ -330,7 +330,7 @@ const UploadProduct = () => {
                 </div>
 
                 <div className='grid gap-1'>
-                  <label htmlFor='stock' className='font-medium'>Number of Stock</label>
+                  <label htmlFor='stock' className='font-medium'>Quantidade em estoque</label>
                   <input 
                     id='stock'
                     type='number'
@@ -344,7 +344,7 @@ const UploadProduct = () => {
                 </div>
 
                 <div className='grid gap-1'>
-                  <label htmlFor='price' className='font-medium'>Price</label>
+                  <label htmlFor='price' className='font-medium'>Preço</label>
                   <input 
                     id='price'
                     type='number'
@@ -358,7 +358,7 @@ const UploadProduct = () => {
                 </div>
 
                 <div className='grid gap-1'>
-                  <label htmlFor='discount' className='font-medium'>Discount</label>
+                  <label htmlFor='discount' className='font-medium'>Desconto</label>
                   <input 
                     id='discount'
                     type='number'
@@ -403,13 +403,13 @@ const UploadProduct = () => {
                   }
 
                 <div onClick={()=>setOpenAddField(true)} className=' hover:bg-primary-200 bg-white py-1 px-3 w-32 text-center font-semibold border border-primary-200 hover:text-neutral-900 cursor-pointer rounded'>
-                  Add Fields
+                  Adicionar campo
                 </div>
 
                 <button
                   className='bg-primary-100 hover:bg-primary-200 py-2 rounded font-semibold'
                 >
-                  Submit
+                  Enviar
                 </button>
             </form>
         </div>

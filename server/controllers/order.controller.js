@@ -33,7 +33,7 @@ import mongoose from "mongoose";
         const updateInUser = await UserModel.updateOne({ _id : userId }, { shopping_cart : []})
 
         return response.json({
-            message : "Order successfully",
+            message : "Pedido feito com sucesso",
             error : false,
             success : true,
             data : generatedOrder
@@ -196,7 +196,7 @@ export async function getOrderDetailsController(request,response){
         const orderlist = await OrderModel.find({ userId : userId }).sort({ createdAt : -1 }).populate('delivery_address')
 
         return response.json({
-            message : "order list",
+            message : "Lista pedidos",
             data : orderlist,
             error : false,
             success : true

@@ -9,7 +9,7 @@ const MyOrders = () => {
   return (
     <div>
       <div className='bg-white shadow-md p-3 font-semibold'>
-        <h1>Order</h1>
+        <h1>Pedido</h1>
       </div>
         {
           !orders[0] && (
@@ -20,7 +20,7 @@ const MyOrders = () => {
           orders.map((order,index)=>{
             return(
               <div key={order._id+index+"order"} className='order rounded p-4 text-sm'>
-                  <p>Order No : {order?.orderId}</p>
+                  <p>Número pedido : {order?.orderId}</p>
                   <div className='flex gap-3'>
                     <img
                       src={order.product_details.image[0]} 

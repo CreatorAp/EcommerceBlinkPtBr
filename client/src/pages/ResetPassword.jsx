@@ -88,10 +88,10 @@ const ResetPassword = () => {
   return (
     <section className='w-full container mx-auto px-2'>
             <div className='bg-white my-4 w-full max-w-lg mx-auto rounded p-7'>
-                <p className='font-semibold text-lg'>Enter Your Password </p>
+                <p className='font-semibold text-lg'>Digite sua senha </p>
                 <form className='grid gap-4 py-4' onSubmit={handleSubmit}>
                     <div className='grid gap-1'>
-                        <label htmlFor='newPassword'>New Password :</label>
+                        <label htmlFor='newPassword'>Nova senha :</label>
                         <div className='bg-blue-50 p-2 border rounded flex items-center focus-within:border-primary-200'>
                             <input
                                 type={showPassword ? "text" : "password"}
@@ -100,7 +100,7 @@ const ResetPassword = () => {
                                 name='newPassword'
                                 value={data.newPassword}
                                 onChange={handleChange}
-                                placeholder='Enter your new password'
+                                placeholder='Digite nova senha'
                             />
                             <div onClick={() => setShowPassword(preve => !preve)} className='cursor-pointer'>
                                 {
@@ -115,7 +115,7 @@ const ResetPassword = () => {
                     </div>
 
                     <div className='grid gap-1'>
-                        <label htmlFor='confirmPassword'>Confirm Password :</label>
+                        <label htmlFor='confirmPassword'>Confirmar Senha :</label>
                         <div className='bg-blue-50 p-2 border rounded flex items-center focus-within:border-primary-200'>
                             <input
                                 type={showConfirmPassword ? "text" : "password"}
@@ -124,7 +124,7 @@ const ResetPassword = () => {
                                 name='confirmPassword'
                                 value={data.confirmPassword}
                                 onChange={handleChange}
-                                placeholder='Enter your confirm password'
+                                placeholder='Confirme a nova senha'
                             />
                             <div onClick={() => setShowConfirmPassword(preve => !preve)} className='cursor-pointer'>
                                 {
@@ -138,12 +138,12 @@ const ResetPassword = () => {
                         </div>
                     </div>
              
-                    <button disabled={!valideValue} className={` ${valideValue ? "bg-green-800 hover:bg-green-700" : "bg-gray-500" }    text-white py-2 rounded font-semibold my-3 tracking-wide`}>Change Password</button>
+                    <button disabled={!valideValue} className={` ${valideValue ? "bg-green-800 hover:bg-green-700" : "bg-gray-500" }    text-white py-2 rounded font-semibold my-3 tracking-wide`}>Mudar Senha</button>
 
                 </form>
 
                 <p>
-                    Already have account? <Link to={"/login"} className='font-semibold text-green-700 hover:text-green-800'>Login</Link>
+                    Ja possui conta? <Link to={"/login"} className='font-semibold text-green-700 hover:text-green-800'>Login</Link>
                 </p>
             </div>
         </section>

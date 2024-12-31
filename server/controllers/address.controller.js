@@ -24,7 +24,7 @@ export const addAddressController = async(request,response)=>{
         })
 
         return response.json({
-            message : "Address Created Successfully",
+            message : "Endereço criado com sucesso",
             error : false,
             success : true,
             data : saveAddress
@@ -47,7 +47,7 @@ export const getAddressController = async(request,response)=>{
 
         return response.json({
             data : data,
-            message : "List of address",
+            message : "Lista de endereço",
             error : false,
             success : true
         })
@@ -75,7 +75,7 @@ export const updateAddressController = async(request,response)=>{
         })
 
         return response.json({
-            message : "Address Updated",
+            message : "Endereço atualizado",
             error : false,
             success : true,
             data : updateAddress
@@ -99,7 +99,7 @@ export const deleteAddresscontroller = async(request,response)=>{
         })
 
         return response.json({
-            message : "Address remove",
+            message : "Endereço removido",
             error : false,
             success : true,
             data : disableAddress

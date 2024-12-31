@@ -30,7 +30,7 @@ const DisplayCartItem = ({close}) => {
     <section className='bg-neutral-900 fixed top-0 bottom-0 right-0 left-0 bg-opacity-70 z-50'>
         <div className='bg-white w-full max-w-sm min-h-screen max-h-screen ml-auto'>
             <div className='flex items-center p-4 shadow-md gap-3 justify-between'>
-                <h2 className='font-semibold'>Cart</h2>
+                <h2 className='font-semibold'>Carrinho</h2>
                 <Link to={"/"} className='lg:hidden'>
                     <IoClose size={25}/>
                 </Link>
@@ -45,7 +45,7 @@ const DisplayCartItem = ({close}) => {
                     cartItem[0] ? (
                         <>
                             <div className='flex items-center justify-between px-4 py-2 bg-blue-100 text-blue-500 rounded-full'>
-                                    <p>Your total savings</p>
+                                    <p>Sua economia total</p>
                                     <p>{DisplayPriceInRupees(notDiscountTotalPrice - totalPrice )}</p>
                             </div>
                             <div className='bg-white rounded-lg p-4 grid gap-5 overflow-auto'>
@@ -75,21 +75,21 @@ const DisplayCartItem = ({close}) => {
                                     }
                             </div>
                             <div className='bg-white p-4'>
-                                <h3 className='font-semibold'>Bill details</h3>
+                                <h3 className='font-semibold'>Detalhes da conta</h3>
                                 <div className='flex gap-4 justify-between ml-1'>
                                     <p>Items total</p>
                                     <p className='flex items-center gap-2'><span className='line-through text-neutral-400'>{DisplayPriceInRupees(notDiscountTotalPrice)}</span><span>{DisplayPriceInRupees(totalPrice)}</span></p>
                                 </div>
                                 <div className='flex gap-4 justify-between ml-1'>
-                                    <p>Quntity total</p>
+                                    <p>Quantidade total</p>
                                     <p className='flex items-center gap-2'>{totalQty} item</p>
                                 </div>
                                 <div className='flex gap-4 justify-between ml-1'>
-                                    <p>Delivery Charge</p>
-                                    <p className='flex items-center gap-2'>Free</p>
+                                    <p>Taxa de entrega</p>
+                                    <p className='flex items-center gap-2'>Gratis</p>
                                 </div>
                                 <div className='font-semibold flex items-center justify-between gap-4'>
-                                    <p >Grand total</p>
+                                    <p >Total geral</p>
                                     <p>{DisplayPriceInRupees(totalPrice)}</p>
                                 </div>
                             </div>
@@ -100,7 +100,7 @@ const DisplayCartItem = ({close}) => {
                                 src={imageEmpty}
                                 className='w-full h-full object-scale-down' 
                             />
-                            <Link onClick={close} to={"/"} className='block bg-green-600 px-4 py-2 text-white rounded'>Shop Now</Link>
+                            <Link onClick={close} to={"/"} className='block bg-green-600 px-4 py-2 text-white rounded'>Compre agora</Link>
                         </div>
                     )
                 }
@@ -115,7 +115,7 @@ const DisplayCartItem = ({close}) => {
                                 {DisplayPriceInRupees(totalPrice)}
                             </div>
                             <button onClick={redirectToCheckoutPage} className='flex items-center gap-1'>
-                                Proceed
+                            Prosseguir
                                 <span><FaCaretRight/></span>
                             </button>
                         </div>

@@ -30,7 +30,7 @@ const CardProduct = ({data}) => {
         <div>
             {
               Boolean(data.discount) && (
-                <p className='text-green-600 bg-green-100 px-2 w-fit text-xs rounded-full'>{data.discount}% discount</p>
+                <p className='text-green-600 bg-green-100 px-2 w-fit text-xs rounded-full'>{data.discount}% desconto</p>
               )
             }
         </div>
@@ -54,7 +54,7 @@ const CardProduct = ({data}) => {
         <div className=''>
           {
             data.stock == 0 ? (
-              <p className='text-red-500 text-sm text-center'>Out of stock</p>
+              <p className='text-red-500 text-sm text-center'>Fora de estoque</p>
             ) : (
               <AddToCartButton data={data} />
             )

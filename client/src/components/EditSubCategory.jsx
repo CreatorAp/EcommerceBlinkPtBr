@@ -87,14 +87,14 @@ const EditSubCategory = ({close,data,fetchData}) => {
     <section className='fixed top-0 right-0 bottom-0 left-0 bg-neutral-800 bg-opacity-70 z-50 flex items-center justify-center p-4'>
         <div className='w-full max-w-5xl bg-white p-4 rounded'>
             <div className='flex items-center justify-between gap-3'>
-                <h1 className='font-semibold'>Edit Sub Category</h1>
+                <h1 className='font-semibold'>Editar Sub Categoria</h1>
                 <button onClick={close}>
                     <IoClose size={25}/>
                 </button>
             </div>
             <form className='my-3 grid gap-3' onSubmit={handleSubmitSubCategory}>
                     <div className='grid gap-1'>
-                        <label htmlFor='name'>Name</label>
+                        <label htmlFor='name'>Nome</label>
                         <input 
                             id='name'
                             name='name'
@@ -109,7 +109,7 @@ const EditSubCategory = ({close,data,fetchData}) => {
                             <div className='border h-36 w-full lg:w-36 bg-blue-50 flex items-center justify-center'>
                                 {
                                     !subCategoryData.image ? (
-                                        <p className='text-sm text-neutral-400'>No Image</p>
+                                        <p className='text-sm text-neutral-400'>Nenhuma Imagem</p>
                                     ) : (
                                         <img
                                             alt='subCategory'
@@ -121,7 +121,7 @@ const EditSubCategory = ({close,data,fetchData}) => {
                             </div>
                             <label htmlFor='uploadSubCategoryImage'>
                                 <div className='px-4 py-1 border border-primary-100 text-primary-200 rounded hover:bg-primary-200 hover:text-neutral-900 cursor-pointer  '>
-                                    Upload Image
+                                    Upload Imagem
                                 </div>
                                 <input 
                                     type='file'
@@ -134,7 +134,7 @@ const EditSubCategory = ({close,data,fetchData}) => {
                         </div>
                     </div>
                     <div className='grid gap-1'>
-                        <label>Select Category</label>
+                        <label>Selecionar Categoria</label>
                         <div className='border focus-within:border-primary-200 rounded'>
                             {/*display value**/}
                             <div className='flex flex-wrap gap-2'>
@@ -167,7 +167,7 @@ const EditSubCategory = ({close,data,fetchData}) => {
                                     })
                                 }}
                             >
-                                <option value={""}>Select Category</option>
+                                <option value={""}>Selecionar Categoria</option>
                                 {
                                     allCategory.map((category,index)=>{
                                         return(
@@ -185,7 +185,7 @@ const EditSubCategory = ({close,data,fetchData}) => {
                             font-semibold
                         `}
                     >
-                        Submit
+                        Enviar
                     </button>
                     
             </form>

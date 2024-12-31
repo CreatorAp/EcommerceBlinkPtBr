@@ -8,7 +8,7 @@ export const AddCategoryController = async(request,response)=>{
 
         if(!name || !image){
             return response.status(400).json({
-                message : "Enter required fields",
+                message : "Digite os campos obrigatorios",
                 error : true,
                 success : false
             })
@@ -23,14 +23,14 @@ export const AddCategoryController = async(request,response)=>{
 
         if(!saveCategory){
             return response.status(500).json({
-                message : "Not Created",
+                message : "Não criado",
                 error : true,
                 success : false
             })
         }
 
         return response.json({
-            message : "Add Category",
+            message : "Adicionar Categoria",
             data : saveCategory,
             success : true,
             error : false
@@ -76,7 +76,7 @@ export const updateCategoryController = async(request,response)=>{
         })
 
         return response.json({
-            message : "Updated Category",
+            message : "Categoria atualizada",
             success : true,
             error : false,
             data : update
@@ -108,7 +108,7 @@ export const deleteCategoryController = async(request,response)=>{
 
         if(checkSubCategory >  0 || checkProduct > 0 ){
             return response.status(400).json({
-                message : "Category is already use can't delete",
+                message : "Categoria ja está em uso, não pode ser deletada",
                 error : true,
                 success : false
             })
@@ -117,7 +117,7 @@ export const deleteCategoryController = async(request,response)=>{
         const deleteCategory = await CategoryModel.deleteOne({ _id : _id})
 
         return response.json({
-            message : "Delete category successfully",
+            message : "Categoria deletada",
             data : deleteCategory,
             error : false,
             success : true

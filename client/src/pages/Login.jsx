@@ -82,11 +82,11 @@ const Login = () => {
                             name='email'
                             value={data.email}
                             onChange={handleChange}
-                            placeholder='Enter your email'
+                            placeholder='Digite email'
                         />
                     </div>
                     <div className='grid gap-1'>
-                        <label htmlFor='password'>Password :</label>
+                        <label htmlFor='password'>Senha :</label>
                         <div className='bg-blue-50 p-2 border rounded flex items-center focus-within:border-primary-200'>
                             <input
                                 type={showPassword ? "text" : "password"}
@@ -95,7 +95,7 @@ const Login = () => {
                                 name='password'
                                 value={data.password}
                                 onChange={handleChange}
-                                placeholder='Enter your password'
+                                placeholder='Digite senha'
                             />
                             <div onClick={() => setShowPassword(preve => !preve)} className='cursor-pointer'>
                                 {
@@ -107,7 +107,7 @@ const Login = () => {
                                 }
                             </div>
                         </div>
-                        <Link to={"/forgot-password"} className='block ml-auto hover:text-primary-200'>Forgot password ?</Link>
+                        <Link to={"/forgot-password"} className='block ml-auto hover:text-primary-200'>Esqueceu a senha ?</Link>
                     </div>
     
                     <button disabled={!valideValue} className={` ${valideValue ? "bg-green-800 hover:bg-green-700" : "bg-gray-500" }    text-white py-2 rounded font-semibold my-3 tracking-wide`}>Login</button>
@@ -115,7 +115,7 @@ const Login = () => {
                 </form>
 
                 <p>
-                    Don't have account? <Link to={"/register"} className='font-semibold text-green-700 hover:text-green-800'>Register</Link>
+                    Não possui conta? <Link to={"/register"} className='font-semibold text-green-700 hover:text-green-800'>Cadastro</Link>
                 </p>
             </div>
         </section>

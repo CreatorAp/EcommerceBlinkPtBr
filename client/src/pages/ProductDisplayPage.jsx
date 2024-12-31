@@ -104,11 +104,11 @@ const ProductDisplayPage = () => {
 
             <div className='my-4  hidden lg:grid gap-3 '>
                 <div>
-                    <p className='font-semibold'>Description</p>
+                    <p className='font-semibold'>Descrição</p>
                     <p className='text-base'>{data.description}</p>
                 </div>
                 <div>
-                    <p className='font-semibold'>Unit</p>
+                    <p className='font-semibold'>Unidade</p>
                     <p className='text-base'>{data.unit}</p>
                 </div>
                 {
@@ -131,7 +131,7 @@ const ProductDisplayPage = () => {
             <p className=''>{data.unit}</p> 
             <Divider/>
             <div>
-              <p className=''>Price</p> 
+              <p className=''>Preço</p> 
               <div className='flex items-center gap-2 lg:gap-4'>
                 <div className='border border-green-600 px-4 py-2 rounded bg-green-50 w-fit'>
                     <p className='font-semibold text-lg lg:text-xl'>{DisplayPriceInRupees(pricewithDiscount(data.price,data.discount))}</p>
@@ -143,7 +143,7 @@ const ProductDisplayPage = () => {
                 }
                 {
                   data.discount && (
-                    <p className="font-bold text-green-600 lg:text-2xl">{data.discount}% <span className='text-base text-neutral-500'>Discount</span></p>
+                    <p className="font-bold text-green-600 lg:text-2xl">{data.discount}% <span className='text-base text-neutral-500'>Desconto</span></p>
                   )
                 }
                 
@@ -153,7 +153,7 @@ const ProductDisplayPage = () => {
               
               {
                 data.stock === 0 ? (
-                  <p className='text-lg text-red-500 my-2'>Out of Stock</p>
+                  <p className='text-lg text-red-500 my-2'>Esgotado</p>
                 ) 
                 : (
                   // <button className='my-4 px-4 py-1 bg-green-600 hover:bg-green-700 text-white rounded'>Add</button>
@@ -164,7 +164,7 @@ const ProductDisplayPage = () => {
               }
            
 
-            <h2 className='font-semibold'>Why shop from binkeyit? </h2>
+            <h2 className='font-semibold'>Porque comprar aqui? </h2>
             <div>
                   <div className='flex  items-center gap-4 my-4'>
                       <img
@@ -173,8 +173,8 @@ const ProductDisplayPage = () => {
                         className='w-20 h-20'
                       />
                       <div className='text-sm'>
-                        <div className='font-semibold'>Superfast Delivery</div>
-                        <p>Get your orer delivered to your doorstep at the earliest from dark stores near you.</p>
+                        <div className='font-semibold'>Entrega rapida</div>
+                        <p>Receba seu pedido na sua porta o mais breve possível em lojas dark perto de você.</p>
                       </div>
                   </div>
                   <div className='flex  items-center gap-4 my-4'>
@@ -184,8 +184,8 @@ const ProductDisplayPage = () => {
                         className='w-20 h-20'
                       />
                       <div className='text-sm'>
-                        <div className='font-semibold'>Best Prices & Offers</div>
-                        <p>Best price destination with offers directly from the nanufacturers.</p>
+                        <div className='font-semibold'>Melhores preços e ofertas </div>
+                        <p>Destino com melhor preço e ofertas diretamente dos fabricantes.</p>
                       </div>
                   </div>
                   <div className='flex  items-center gap-4 my-4'>
@@ -195,8 +195,8 @@ const ProductDisplayPage = () => {
                         className='w-20 h-20'
                       />
                       <div className='text-sm'>
-                        <div className='font-semibold'>Wide Assortment</div>
-                        <p>Choose from 5000+ products across food personal care, household & other categories.</p>
+                        <div className='font-semibold'>Grande variedade</div>
+                        <p>Escolha entre mais de 5.000 produtos em alimentos, cuidados pessoais, casa e outras categorias.</p>
                       </div>
                   </div>
             </div>
@@ -204,11 +204,11 @@ const ProductDisplayPage = () => {
             {/****only mobile */}
             <div className='my-4 grid gap-3 '>
                 <div>
-                    <p className='font-semibold'>Description</p>
+                    <p className='font-semibold'>Descrição</p>
                     <p className='text-base'>{data.description}</p>
                 </div>
                 <div>
-                    <p className='font-semibold'>Unit</p>
+                    <p className='font-semibold'>Unidade</p>
                     <p className='text-base'>{data.unit}</p>
                 </div>
                 {

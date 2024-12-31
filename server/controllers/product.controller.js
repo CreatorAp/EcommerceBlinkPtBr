@@ -17,7 +17,7 @@ export const createProductController = async(request,response)=>{
 
         if(!name || !image[0] || !category[0] || !subCategory[0] || !unit || !price || !description ){
             return response.status(400).json({
-                message : "Enter required fields",
+                message : "Digite os campos obrigatorios",
                 error : true,
                 success : false
             })
@@ -38,7 +38,7 @@ export const createProductController = async(request,response)=>{
         const saveProduct = await product.save()
 
         return response.json({
-            message : "Product Created Successfully",
+            message : "Produto criado com sucesso",
             data : saveProduct,
             error : false,
             success : true
@@ -80,7 +80,7 @@ export const getProductController = async(request,response)=>{
         ])
 
         return response.json({
-            message : "Product data",
+            message : "Produto dados",
             error : false,
             success : true,
             totalCount : totalCount,
@@ -133,7 +133,7 @@ export const getProductByCategoryAndSubCategory  = async(request,response)=>{
 
         if(!categoryId || !subCategoryId){
             return response.status(400).json({
-                message : "Provide categoryId and subCategoryId",
+                message : "Forneça categoryId e subCategoryId",
                 error : true,
                 success : false
             })
@@ -160,7 +160,7 @@ export const getProductByCategoryAndSubCategory  = async(request,response)=>{
         ])
 
         return response.json({
-            message : "Product list",
+            message : "Lista de produtos",
             data : data,
             totalCount : dataCount,
             page : page,
@@ -186,7 +186,7 @@ export const getProductDetails = async(request,response)=>{
 
 
         return response.json({
-            message : "product details",
+            message : "Detalhes produto",
             data : product,
             error : false,
             success : true
@@ -208,7 +208,7 @@ export const updateProductDetails = async(request,response)=>{
 
         if(!_id){
             return response.status(400).json({
-                message : "provide product _id",
+                message : "forneça product _id",
                 error : true,
                 success : false
             })
@@ -219,7 +219,7 @@ export const updateProductDetails = async(request,response)=>{
         })
 
         return response.json({
-            message : "updated successfully",
+            message : "atualizado com sucesso",
             data : updateProduct,
             error : false,
             success : true
@@ -241,7 +241,7 @@ export const deleteProductDetails = async(request,response)=>{
 
         if(!_id){
             return response.status(400).json({
-                message : "provide _id ",
+                message : "forneça _id ",
                 error : true,
                 success : false
             })
@@ -250,7 +250,7 @@ export const deleteProductDetails = async(request,response)=>{
         const deleteProduct = await ProductModel.deleteOne({_id : _id })
 
         return response.json({
-            message : "Delete successfully",
+            message : "Removido com sucesso",
             error : false,
             success : true,
             data : deleteProduct
