@@ -1,6 +1,10 @@
 export const DisplayPriceInRupees = (price)=>{
-    return new Intl.NumberFormat('en-US',{
-        style : 'currency',
-        currency : 'USD'
+    // return new Intl.NumberFormat('pt-BR',{
+    //     style : 'currency',
+    //     currency : 'BRL'
+    // }).format(price)
+        return new Intl.NumberFormat('pt-BR',{
+            style: 'currency',
+            currency: 'BRL',
     }).format(price)
 }
