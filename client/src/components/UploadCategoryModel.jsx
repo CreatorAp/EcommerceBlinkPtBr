@@ -80,7 +80,7 @@ const UploadCategoryModel = ({close, fetchData}) => {
                     <input
                         type='text'
                         id='categoryName'
-                        placeholder='Enter category name'
+                        placeholder='Digite nome categoria'
                         value={data.name}
                         name='name'
                         onChange={handleOnChange}

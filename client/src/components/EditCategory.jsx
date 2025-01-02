@@ -80,7 +80,7 @@ const EditCategory = ({close, fetchData,data : CategoryData}) => {
                 <input
                     type='text'
                     id='categoryName'
-                    placeholder='Enter category name'
+                    placeholder='Digite nome categoria '
                     value={data.name}
                     name='name'
                     onChange={handleOnChange}
