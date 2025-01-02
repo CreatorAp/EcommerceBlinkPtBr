@@ -13,7 +13,7 @@ import UserMenu from './UserMenu';
 import { DisplayPriceInRupees } from '../utils/DisplayPriceInRupees';
 import { useGlobalContext } from '../provider/GlobalProvider';
 import DisplayCartItem from './DisplayCartItem';
-import logo2 from '../assets/sua logo.png'
+import logo2 from '../assets/output.png'
 
 const Header = () => {
     const [ isMobile ] = useMobile()
