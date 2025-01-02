@@ -13,6 +13,7 @@ import UserMenu from './UserMenu';
 import { DisplayPriceInRupees } from '../utils/DisplayPriceInRupees';
 import { useGlobalContext } from '../provider/GlobalProvider';
 import DisplayCartItem from './DisplayCartItem';
+import logo2 from '../assets/sua logo.png'
 
 const Header = () => {
     const [ isMobile ] = useMobile()
@@ -67,14 +68,14 @@ const Header = () => {
                                 <div className='h-full'>
                                     <Link to={"/"} className='h-full flex justify-center items-center'>
                                         <img 
-                                            src={yourLogo2}
+                                            src={logo2}
                                             width={170}
                                             height={60}
                                             alt='logo'
                                             className='hidden lg:block'
                                         />
                                         <img 
-                                            src={yourLogo2}
+                                            src={logo2}
                                             width={120}
                                             height={60}
                                             alt='logo'
