@@ -133,7 +133,7 @@ const UploadSubCategoryModel = ({close, fetchData}) => {
                         </div>
                     </div>
                     <div className='grid gap-1'>
-                        <label>Select Category</label>
+                        <label>Selecione Categoria</label>
                         <div className='border focus-within:border-primary-200 rounded'>
                             {/*display value**/}
                             <div className='flex flex-wrap gap-2'>

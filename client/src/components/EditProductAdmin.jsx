@@ -252,7 +252,7 @@ const EditProductAdmin = ({ close ,data : propsData,fetchProductData}) => {
                       setSelectCategory("")
                     }}
                   >
-                    <option value={""}>Select Category</option>
+                    <option value={""}>Selecione Categoria</option>
                     {
                       allCategory.map((c, index) => {
                         return (
