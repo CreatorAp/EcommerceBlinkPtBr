@@ -245,7 +245,7 @@ const UploadProduct = () => {
                         setSelectCategory("")
                       }}
                     >
-                      <option value={""}>Select Categoria</option>
+                      <option value={""}>Selecionar Categoria</option>
                       {
                         allCategory.map((c,index)=>{
                           return(

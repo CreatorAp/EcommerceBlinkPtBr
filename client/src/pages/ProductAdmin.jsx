@@ -84,7 +84,7 @@ const ProductAdmin = () => {
                   <IoSearchOutline size={25}/>
                   <input
                     type='text'
-                    placeholder='Search product here ...' 
+                    placeholder='Pesquisar produto aqui...' 
                     className='h-full w-full  outline-none bg-transparent'
                     value={search}
                     onChange={handleOnChange}
