@@ -24,7 +24,7 @@ app.use(cors({
               
     origin : ["*","http://localhost:5173", "https://ecommercefront-liard.vercel.app", 
         "https://ecommercefront-9q3woacnx-arnon-pedros-projects.vercel.app", 
-        "https://ecommercefront-7geguprvq-arnon-pedros-projects.vercel.app", "https://ecommerce-blink-pt-br.vercel.app", "https://ecommerce-blink-pt-br-front.vercel.app"]
+        "https://ecommercefront-7geguprvq-arnon-pedros-projects.vercel.app", "https://ecommerce-blink-pt-br.vercel.app", "https://ecommerce-blink-pt-br-front.vercel.app", "https://ecommerce-blink-pt-br.vercel.app"]
                                                                               
 }))
 app.use(express.json())
