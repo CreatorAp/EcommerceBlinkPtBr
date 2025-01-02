@@ -171,7 +171,7 @@ const UploadProduct = () => {
                   <textarea 
                     id='description'
                     type='text'
-                    placeholder='Enter product description'
+                    placeholder='Descrição produto'
                     name='description'
                     value={data.description}
                     onChange={handleChange}
@@ -320,7 +320,7 @@ const UploadProduct = () => {
                   <input 
                     id='unit'
                     type='text'
-                    placeholder='Enter product unit'
+                    placeholder='Unidade produto'
                     name='unit'
                     value={data.unit}
                     onChange={handleChange}
@@ -334,7 +334,7 @@ const UploadProduct = () => {
                   <input 
                     id='stock'
                     type='number'
-                    placeholder='Enter product stock'
+                    placeholder='Quantidade estoque produto'
                     name='stock'
                     value={data.stock}
                     onChange={handleChange}
@@ -348,7 +348,7 @@ const UploadProduct = () => {
                   <input 
                     id='price'
                     type='number'
-                    placeholder='Enter product price'
+                    placeholder='Preço produto'
                     name='price'
                     value={data.price}
                     onChange={handleChange}
@@ -362,7 +362,7 @@ const UploadProduct = () => {
                   <input 
                     id='discount'
                     type='number'
-                    placeholder='Enter product discount'
+                    placeholder='Desconto produto'
                     name='discount'
                     value={data.discount}
                     onChange={handleChange}

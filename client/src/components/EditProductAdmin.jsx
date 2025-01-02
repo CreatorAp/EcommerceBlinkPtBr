@@ -165,7 +165,7 @@ const EditProductAdmin = ({ close ,data : propsData,fetchProductData}) => {
                 <input
                   id='name'
                   type='text'
-                  placeholder='Enter product name'
+                  placeholder='Nome produto'
                   name='name'
                   value={data.name}
                   onChange={handleChange}
@@ -178,7 +178,7 @@ const EditProductAdmin = ({ close ,data : propsData,fetchProductData}) => {
                 <textarea
                   id='description'
                   type='text'
-                  placeholder='Enter product description'
+                  placeholder='Descrição produto'
                   name='description'
                   value={data.description}
                   onChange={handleChange}
@@ -327,7 +327,7 @@ const EditProductAdmin = ({ close ,data : propsData,fetchProductData}) => {
                 <input
                   id='unit'
                   type='text'
-                  placeholder='Enter product unit'
+                  placeholder='unidade produto'
                   name='unit'
                   value={data.unit}
                   onChange={handleChange}
@@ -341,7 +341,7 @@ const EditProductAdmin = ({ close ,data : propsData,fetchProductData}) => {
                 <input
                   id='stock'
                   type='number'
-                  placeholder='Enter product stock'
+                  placeholder='Quantidade estoque produto'
                   name='stock'
                   value={data.stock}
                   onChange={handleChange}
@@ -355,7 +355,7 @@ const EditProductAdmin = ({ close ,data : propsData,fetchProductData}) => {
                 <input
                   id='price'
                   type='number'
-                  placeholder='Enter product price'
+                  placeholder='preço produto'
                   name='price'
                   value={data.price}
                   onChange={handleChange}
@@ -369,7 +369,7 @@ const EditProductAdmin = ({ close ,data : propsData,fetchProductData}) => {
                 <input
                   id='discount'
                   type='number'
-                  placeholder='Enter product discount'
+                  placeholder='Desconto produto'
                   name='discount'
                   value={data.discount}
                   onChange={handleChange}
