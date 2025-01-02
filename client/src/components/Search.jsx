@@ -53,23 +53,23 @@ const Search = () => {
                         <TypeAnimation
                                 sequence={[
                                     // Same substring at the start will only be typed out once, initially
-                                    'Search "milk"',
+                                    'Procurar "milk"',
                                     1000, // wait 1s before replacing "Mice" with "Hamsters"
-                                    'Search "bread"',
+                                    'Procurar "bread"',
                                     1000,
-                                    'Search "sugar"',
+                                    'Procurar "sugar"',
                                     1000,
-                                    'Search "panner"',
+                                    'Procurar "panner"',
                                     1000,
-                                    'Search "chocolate"',
+                                    'Procurar "chocolate"',
                                     1000,
-                                    'Search "curd"',
+                                    'Procurar "curd"',
                                     1000,
-                                    'Search "rice"',
+                                    'Procurar "rice"',
                                     1000,
-                                    'Search "egg"',
+                                    'Procurar "egg"',
                                     1000,
-                                    'Search "chips"',
+                                    'Procurar "chips"',
                                 ]}
                                 wrapper="span"
                                 speed={50}
@@ -81,7 +81,7 @@ const Search = () => {
                     <div className='w-full h-full'>
                         <input
                             type='text'
-                            placeholder='Search for atta dal and more.'
+                            placeholder='Procurar por Eletrônicos, alimentos e mais.'
                             autoFocus
                             defaultValue={searchText}
                             className='bg-transparent w-full h-full outline-none'
